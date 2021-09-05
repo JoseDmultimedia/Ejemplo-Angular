@@ -1,0 +1,14 @@
+<div class="container">
+    <p>dashboard works! {{nombre}}{{suma(1,1)}}</p>
+    <img [src]="urlImg" width="100px" height="100px">
+    <input type="text" placeholder="Escribe aqui!">
+    <button (click)="cambiarTexto()">click me</button>
+    <br>
+    <p>----------------------------------------------------------------------------</p>
+    <br>
+    <app-card [textCard]="texto" (nuevoEvento)="cambiarTextoOtro($event)"></app-card>
+    <br>
+    <p>-----------------------------------------------</p>
+    <h2>{{otroTexto}}</h2>
+</div>
+
